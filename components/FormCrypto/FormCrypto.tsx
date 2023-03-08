@@ -36,10 +36,7 @@ export const FormCrypto = () => {
           <Select
             selectedValue={formik.values.currency}
             onValueChange={valuee => formik.setFieldValue('currency', valuee)}
-            placeholder="Selecciona tu moneda"
-            // error={formik.touched.currency && Boolean(formik.errors.currency)}
-            // helperText={formik.touched.currency && formik.errors.currency}
-          >
+            placeholder="Selecciona tu moneda">
             <Select.Item label="Dolar de Estados Unidos" value="USD" />
             <Select.Item label="Peso Mexicano" value="MXN" />
             <Select.Item label="Euro" value="EUR" />
@@ -58,10 +55,7 @@ export const FormCrypto = () => {
           <Select
             selectedValue={formik.values.crypto}
             onValueChange={valuee => formik.setFieldValue('crypto', valuee)}
-            placeholder="Selecciona tu moneda"
-            // error={formik.touched.crypto && Boolean(formik.errors.crypto)}
-            // helperText={formik.touched.crypto && formik.errors.crypto}
-          >
+            placeholder="Selecciona tu moneda">
             {cryptos?.map((item, index) => (
               <Select.Item
                 key={index}
